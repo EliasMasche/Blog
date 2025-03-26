@@ -172,3 +172,10 @@ code {
     right: 0.75rem;
     top: 0.5rem;
 }
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
