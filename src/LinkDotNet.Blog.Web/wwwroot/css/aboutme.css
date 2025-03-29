@@ -89,8 +89,7 @@
     letter-spacing: 0.05em;
 }
 
-/* As the MarkupComponent is a base class we have to use deep */
-::deep .aboutme-profile-keypoints li p {
+.aboutme-profile-keypoints li p {
     display: inline;
 }
 

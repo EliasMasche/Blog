@@ -186,7 +186,7 @@ code {
     font-size: 2.5rem;
 }
 
-::deep .navbar-nav li {
+.navbar-nav li {
     padding-left: 1rem;
     white-space: nowrap;
 }
