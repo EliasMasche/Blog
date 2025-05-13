@@ -248,12 +248,13 @@ code {
     z-index: initial;
     max-width: 130px;
 }
-
+/*
 .nav>.nav-item>button {
 	border: 0;
 	background: transparent !important;
 	color: var(--bs-body-color) !important;
 }
+ */
 /*#endregion */
 
 /*#region About Me */
