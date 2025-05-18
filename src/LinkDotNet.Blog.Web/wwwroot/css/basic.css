@@ -174,72 +174,18 @@ code {
     top: 0.5rem;
 }
 
-.barcode {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 2.5rem;
-}
-
-.navbar-nav li {
-    padding-left: 1rem;
-    white-space: nowrap;
-}
-
-.search-bar {
-    border: 2px solid;
-    display: flex;
-    border-radius: 100vh;
-    overflow: hidden;
-    height: 40px;
-    padding: 3px;
-    width: 40px;
-    position: relative;
+.transition-width {
     transition: width 300ms ease-in-out;
 }
 
-.search-bar-input {
-    flex-grow: 1;
-    padding: 0 .5em;
-    border: 0;
-    opacity: 0;
-    background: transparent;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    cursor: pointer;
-    font-weight: 400;
-    color: var(--bs-navbar-color);
+/* Optional expanded width on focus */
+.transition-width:focus-within {
+    width: 170px !important;
 }
 
-.search-bar-input:focus {
-    outline: 0;
-}
-.search-bar-button {
-    border: 0;
-    border-radius: 100vh;
-    margin-left: auto;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    background: transparent;
-	/*
-		TODO: That is really ugly
-		The problem is that every other button is behind nav-
-	 */
-	color: var(--bs-navbar-color);
-}
-
-.search-bar:focus-within {
-    width: 170px;
-}
-
-.search-bar:focus-within .search-bar-input {
-    cursor: initial;
-    opacity: 1;
-    z-index: initial;
-    max-width: 130px;
+.transition-width:focus-within input {
+    opacity: 1 !important;
+    z-index: initial !important;
 }
 /*#endregion */
 
@@ -364,25 +310,6 @@ i {
 /*#endregion */
 
 /*#region Components */
-.actions {
-	float:right;
-}
-
-.actions * {
-	margin-left: 5px;
-	margin-top: 25px;
-	width: 125px;
-}
-
-.preview-img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	object-fit: cover;
-	height: 100%;
-	width: 100%;
-}
-
 .blog-card {
 	display: flex;
 	flex-direction: column;
