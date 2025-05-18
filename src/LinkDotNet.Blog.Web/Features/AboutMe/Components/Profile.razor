@@ -22,7 +22,7 @@
             @if (ShowAdminActions)
             {
                 <li
-                    class="item-draggable"
+                    class="cursor-grab"
                     draggable="true"
                     @ondrag="@(() => currentDragItem = entry)"
                     @ondrop="@(() => HandleDrop(entry))">
